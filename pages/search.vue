@@ -59,11 +59,7 @@ export default {
     if (this.$route.query.query) {
       this.search = this.$route.query.query
     }
-    const photos = await this.$axios.$get(`search/photos?query=${this.search}`, {
-      headers: {
-        Authorization: `Client-ID ${process.env.ACCESS_KEY}`
-      }
-    })
+    const photos = await this.$axios.$get(`search/photos?query=${this.search}`)
     this.photos = photos.results
     this.loading = false
   },

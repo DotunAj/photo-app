@@ -56,11 +56,7 @@ export default {
   },
 
   async created () {
-    const photos = await this.$axios.$get('search/photos?query=African', {
-      headers: {
-        Authorization: `Client-ID ${process.env.ACCESS_KEY}`
-      }
-    })
+    const photos = await this.$axios.$get('search/photos?query=African')
     this.photos = photos.results
     this.loading = false
   },

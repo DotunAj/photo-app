@@ -40,7 +40,12 @@ export default {
    ** Axios module configuration
    */
   axios: {
-    baseURL: process.env.API
+    baseURL: process.env.API,
+    headers: {
+      common: {
+        Authorization: `Client-ID ${process.env.ACCESS_KEY}`
+      }
+    }
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
