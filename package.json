@@ -13,7 +13,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "@nuxtjs/dotenv": "^1.4.0",
-    "@nuxtjs/axios": "^1.4.0",
+    "@nuxtjs/axios": "^5.12.3",
     "nuxt": "^2.14.6"
   },
   "devDependencies": {
